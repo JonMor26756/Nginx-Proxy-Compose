@@ -1,0 +1,11 @@
+version: '2'
+services:
+ apache2:
+  image: httpd;latest
+  container_name: apache2_webserver
+  hostname: apache2_webserver
+  ports:
+   - "80"
+   - "443"
+  env_file:
+   - .env
