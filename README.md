@@ -41,13 +41,18 @@ specific information. This file will contain variables for ease of use.
 You would then:
 
 > cd Nginx-Proxy-Compose
+
 > docker-compose up -d
 
 leaving the Nginx-Proxy-Compose up and running.
 Then
+
 > cd sample-application
+
 > docker-compose up -d
+
 > docker network connect (sample-application-network-name) nginx-proxy
+
 to launch you application
 
 _IMPORTANT_
